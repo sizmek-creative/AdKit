@@ -1,0 +1,1 @@
+start Chrome --allow-file-access-from-files "%~dp0index.html"
