@@ -12,47 +12,45 @@
   <a name="configuration--config.js"></a><a name="1.1"></a>
   - [1.1](#configuration--config.js) **config.js file**: json object containing component configuration.
 
-    - [`General AdKit Component Configuration`](http://github.com)
-    - `type` - `adkit-video360` for video or `adkit-image360` for image.
-    - `showControls` - true \ false value to show the controls.
-    - `muted` - true \ false value to mute the video.
-    - `media` - array of asset paths.
-    - `autoPlay` - object containing the delay in miliseconds.
-    - `settings` - object containing specific media settings:
-      - show360Reminder - true \ false value to show 360 reminder icon when the component loads.
-      - fov - value between 30 - 120 to set the viewing angle.
-      - disableAccelerometer - true \ false to disable accelerometer on mobile.
-    
-    ```javascript
-    
-    define({
-      "banners": [{
-        "id": "Master_Banner",
-        "items": [
+    - [**General AdKit Component Configuration.**](http://github.com)
+    - **type**: `adkit-video360` for video or `adkit-image360` for image.
+    - **showControls**: true \ false value to show the controls.
+    - **muted**: true \ false value to mute the video.
+    - **media**: array of asset paths.
+    - **autoPlay**: object containing the delay in miliseconds.
+    - **settings**: object containing specific media settings -
+      - **show360Reminder** - true \ false value to show 360 reminder icon when the component loads.
+      - **fov** - value between 30 - 120 to set the viewing angle.
+      - **disableAccelerometer** - true \ false to disable accelerometer on mobile.
+__
+__ 
+```javascript
+define({
+  "banners": [{
+    "id": "Master_Banner",
+      "items": [
         // -- START OF THE RELEVANT COMPONENT CONFIGURATION --
-          {
-            "id": "containerId",
-            "type": "adkit-video360",
-            "showControls": true,
-            "muted": true,
-            "media": ["assets/SampleVideo_1080x720_1mb.mp4"],
-            "settings": {
-              "show360Reminder": true,
-              "fov": 60,
-              "disableAccelerometer": false
-            },
-            "autoPlay": {
-              "delay": 0
-            },
-            "width": 240,
-            "height": 180,
-            "top": 0,
-            "left": 0,
-            "position": "absolute"
-          }
-          // -- END OF THE RELEVANT COMPONENT CONFIGURATION --
-        ]
-      }]
-  });
-  
-  ```
+        {
+          "id": "containerId",
+          "type": "adkit-video360",
+          "showControls": true,
+          "muted": true,
+          "media": ["assets/SampleVideo_1080x720_1mb.mp4"],
+          "settings": {
+          "show360Reminder": true,
+          "fov": 60,
+          "disableAccelerometer": false
+          },
+          "autoPlay": {
+            "delay": 0
+          },
+          "width": 240,
+          "height": 180,
+          "top": 0,
+          "left": 0,
+          "position": "absolute"
+         }
+         // -- END OF THE RELEVANT COMPONENT CONFIGURATION --
+  ]}]
+});
+```
