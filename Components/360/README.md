@@ -49,8 +49,8 @@ define({
           "top": 0,
           "left": 0,
           "position": "absolute"
-         }
-         // -- END OF THE RELEVANT COMPONENT CONFIGURATION --
+        }
+        // -- END OF THE RELEVANT COMPONENT CONFIGURATION --
   ]}]
 });
 ```
