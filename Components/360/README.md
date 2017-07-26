@@ -22,8 +22,8 @@
       - **show360Reminder** - true \ false value to show 360 reminder icon when the component loads.
       - **fov** - value between 30 - 120 to set the viewing angle.
       - **disableAccelerometer** - true \ false to disable accelerometer on mobile.
-__
-__ 
+
+
 ```javascript
 define({
   "banners": [{
