@@ -12,13 +12,19 @@
   <a name="configuration--config.js"></a><a name="1.1"></a>
   - [1.1](#configuration--config.js) **config.js file**: json object containing component configuration.
 
-    - `string`
-    - `number`
-    - `boolean`
-    - `null`
-    - `undefined`
-
+    - `id` - container id.
+    - `type` - `adkit-video360` for video or `adkit-image360` for image.
+    - `showControls` - true \ false value to show the controls.
+    - `muted` - true \ false value to mute the video.
+    - `media` - array of asset paths.
+    - `settings` - object containing specific component settings:
+                 -- show360Reminder - true \ false value to show 360 reminder icon when the component loads.
+                 -- fov - value between 30 - 120 to set the viewing angle.
+                 -- disableAccelerometer - true \ false to disable accelerometer on mobile.
+    
+    
     ```javascript
+    
     define({
       "banners": [{
         "id": "Master_Banner",
@@ -48,4 +54,5 @@
         ]
       }]
   });
-    ```
+  
+  ```
