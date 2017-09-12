@@ -12,7 +12,7 @@
     - **showControls**: true \ false value to show the controls.
     - **muted**: true \ false value to mute the video.
     - **media**: array of asset paths.
-    - **autoPlay**: object containing the delay in miliseconds.
+    - **autoPlay**: object containing the delay in milliseconds.
 
 ```javascript
 define({
